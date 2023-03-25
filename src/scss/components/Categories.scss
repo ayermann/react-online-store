@@ -1,0 +1,46 @@
+.categories {
+  margin: 10px 30px;
+  width: 70%;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      background-color: darken(#f9f9f9, 2%);
+      padding: 13px 30px;
+      border-radius: 30px;
+      margin: 10px;
+      font-weight: bold;
+      /* box-shadow: 1px 2px 1px grey; */
+      cursor: pointer;
+      transition: background-color 0.1s ease-in-out;
+
+      &:hover {
+        background-color: darken(#f9f9f9, 5%);
+      }
+
+      &:active {
+        background-color: darken(#f9f9f9, 9%);
+      }
+
+      &.active {
+        background-color: #282828;
+        color: #fff;
+      }
+    }
+  }
+}
+@media (max-width: 1234px) {
+  .categories {
+    width: 100%;
+  }
+}
+
+@media (max-width: 885px) {
+  .categories {
+    padding-bottom: 10px;
+    width: 90%;
+    margin: 10px auto;
+    max-height: 70px;
+    overflow-y: auto;
+  }
+}

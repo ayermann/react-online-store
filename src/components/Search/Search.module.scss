@@ -1,0 +1,30 @@
+.root {
+  width: 400px;
+  position: relative;
+  input {
+    border: solid 1px rgba(0, 0, 0, 0.1);
+    padding: 12px 30px 12px 20px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 16px;
+    padding-left: 38px;
+    &:focus {
+      border: solid 1px rgba(0, 0, 0, 0.2);
+    }
+  }
+  img {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    opacity: 0.5;
+  }
+  .clear {
+    position: absolute;
+    left: 370px;
+    top: 15px;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+}
