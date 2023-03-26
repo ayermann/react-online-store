@@ -11,6 +11,13 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    .logo__image {
+      width: 48px;
+      height: 48px;
+      background-image: url(../../assets/images/logo.png);
+      background-position: center;
+      background-size: 48px;
+    }
   }
   .header-logo-text {
     display: flex;
@@ -45,6 +52,7 @@
     border-radius: 40px;
     margin: 10px 10px;
     /*     box-shadow: 1px 1px 1px grey; */
+
     a {
       display: flex;
       flex-wrap: wrap;
@@ -75,4 +83,11 @@
 .header-cart:active {
   background-color: darken(#fe5f1e, 12%);
   transform: translateY(1px);
+}
+.cart__button__image {
+  width: 35px;
+  height: 35px;
+  background-image: url(../../assets/images/cart.png);
+  background-position: center;
+  background-size: 35px;
 }
